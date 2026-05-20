@@ -1,0 +1,16 @@
+{
+  "name": "claude-flutter-skills",
+  "owner": {
+    "name": "kane313"
+  },
+  "description": "Claude Code skills for Flutter development. Currently ships the HTML-to-Flutter UI reproduction pipeline.",
+  "plugins": [
+    {
+      "name": "flutter-html-reproduce",
+      "source": "./plugins/flutter-html-reproduce",
+      "description": "Reproduce a Flutter UI page from an HTML input (file / URL / screenshot / snippet) via a 5-phase pipeline. Bundles the orchestrator skill plus six sub-skills.",
+      "category": "development",
+      "keywords": ["flutter", "dart", "html", "css", "ui", "reproduce", "design-to-code"]
+    }
+  ]
+}

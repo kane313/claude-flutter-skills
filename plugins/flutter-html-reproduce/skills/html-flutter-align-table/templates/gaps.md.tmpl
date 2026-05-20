@@ -1,0 +1,35 @@
+# Theme Gaps — {{page_name}}
+
+Generated: {{timestamp}}
+Total gaps: {{total_gaps}}
+
+## How to use this file
+
+Each row below is an HTML design token that has no equivalent in the project's
+ThemeData. Two options:
+1. Add the suggested entry to `lib/theme/**` (preferred — improves all future
+   reproductions and design coherence).
+2. Skip — the `html-css-to-flutter-style` skill will hardcode the literal and
+   tag it with `// TODO: theme gap`.
+
+## Colors
+
+| HTML | Suggested name | Reason |
+|---|---|---|
+{{#each colors}}
+| `{{html_value}}` | `{{suggested_name}}` | {{reason}} |
+{{/each}}
+
+## Typography
+
+| HTML | Suggested name | Reason |
+|---|---|---|
+{{#each typography}}
+| {{html_summary}} | `{{suggested_name}}` | {{reason}} |
+{{/each}}
+
+## Spacing / Radius / Shadow / Unsupported CSS
+
+{{#each others}}
+- **{{category}}** — `{{html_value}}` — {{reason}}
+{{/each}}

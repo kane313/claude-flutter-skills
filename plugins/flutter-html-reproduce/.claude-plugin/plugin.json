@@ -1,0 +1,11 @@
+{
+  "name": "flutter-html-reproduce",
+  "description": "Reproduces a Flutter UI page from an HTML input (file / URL / screenshot / snippet) via a 5-phase pipeline: Source & Align -> Skeleton -> Styles -> Assets+States -> Verify. Bundles the orchestrator skill plus six sub-skills (source-fetcher, align-table, dom-to-widget-tree, css-to-style, asset-export, pixel-diff).",
+  "version": "1.0.0",
+  "author": {
+    "name": "kane313"
+  },
+  "homepage": "https://github.com/kane313/claude-flutter-skills",
+  "repository": "https://github.com/kane313/claude-flutter-skills",
+  "license": "MIT"
+}

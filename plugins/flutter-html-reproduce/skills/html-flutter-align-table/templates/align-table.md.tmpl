@@ -1,0 +1,33 @@
+# Align Table — {{page_name}}
+
+Generated: {{timestamp}}
+Source HTML: {{source}}
+Hit rate: {{hit_rate}}% ({{matched}}/{{total}})
+
+{{#if low_coverage}}
+> ⚠️ Coverage below 30%. Consider auditing the theme layer before reproducing.
+{{/if}}
+
+## Colors
+
+| HTML | Flutter | Confidence |
+|---|---|---|
+{{#each colors}}
+| `{{html_value}}` | `Theme.of(context).{{project_path}}` | {{confidence}} |
+{{/each}}
+
+## Typography
+
+| HTML | Flutter | Confidence |
+|---|---|---|
+{{#each typography}}
+| {{html_summary}} | `Theme.of(context).{{project_path}}` | {{confidence}} |
+{{/each}}
+
+## Spacing / Radius / Shadow
+
+| Category | HTML | Flutter | Confidence |
+|---|---|---|---|
+{{#each others}}
+| {{category}} | {{html_value}} | {{project_path}} | {{confidence}} |
+{{/each}}
