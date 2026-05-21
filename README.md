@@ -64,6 +64,20 @@ runs `flutter analyze` along the way.
 - Optional: `cwebp` on `PATH` for WebP asset conversion; Patrol for the
   pixel-diff verification step (the step is skipped gracefully without it).
 
+## Maintaining the plugin
+
+The skills are developed under `~/.claude/skills/` and copied into this repo
+for distribution. After editing a skill, re-sync and release with the bundled
+script:
+
+```bash
+./sync-skills.sh           # copy the latest skills in, show what changed
+./sync-skills.sh --push    # copy, bump the patch version, commit & push
+```
+
+`--push` bumps `version` in `plugin.json` so colleagues are offered the update
+when they run `/plugin marketplace update claude-flutter-skills`.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
