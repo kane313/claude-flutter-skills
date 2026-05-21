@@ -1,5 +1,7 @@
 # claude-flutter-skills
 
+> **English** · [中文](README.zh-CN.md)
+
 A [Claude Code](https://claude.com/claude-code) plugin marketplace for Flutter
 development. It currently ships one plugin — **flutter-html-reproduce** — which
 reproduces a Flutter UI page from an HTML design input.
